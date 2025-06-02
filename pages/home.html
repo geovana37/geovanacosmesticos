@@ -15,6 +15,68 @@
          font-family: "Dancing Script", cursive;
          font-optical-sizing: auto;
      }
+     #rodape {
+         background-color: #c37bc5;
+         color: #fff;
+         padding: 20px;
+         text-align: center;
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         right: 0;
+     }
+     /* Estilos para o footer */
+footer a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #d6c252 !important;
+    text-decoration: underline;
+}
+
+footer .input-group {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+footer .form-control {
+    background-color: #528bc4;
+    border: 1px solid #495057;
+    color: white;
+}
+
+footer .form-control:focus {
+    background-color: #495057;
+    border-color: #FFD700;
+    box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+}
+
+footer .btn-primary {
+    background-color: #84418a;
+    border-color: #84418a;
+}
+
+footer .btn-primary:hover {
+    background-color: #6a3570;
+    transform: translateY(-1px);
+}
+
+footer .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    background-color: rgba(255,215,0,0.2);
+    transform: translateY(-3px);
+}
         body {
            
             background-color: #f8f9fa;
@@ -200,7 +262,7 @@
     </style>
 </head>
 
-<body>
+<body class="dancing-script-regular">
     <header class="header">
         <div class="container">
             <nav class="navbar navbar-expand-md py-3">
@@ -209,7 +271,8 @@
                         <div class="logo-container">
                             <img src="../pages/WhatsApp_Image_2025-03-24_at_20.54.45-removebg-preview.png" class="logo-img logo-pulse" alt="Logo EmporioOtaku">
                         </div>
-                        <span class="logo-text">geovana comesticos</span>
+        
+            <span class=" fs-3 text-light dancing-script-regular">geovana comesticos</span>
                     </a>
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -218,7 +281,7 @@
                     
                     <div class="collapse navbar-collapse" id="navbarContent">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                            <li class="nav-item">
+                            <li class="nav-item fs-2">
                                 <a href="index.html" class="nav-link px-3">Home</a>
                             </li>
                             <li class="nav-item">
@@ -246,23 +309,69 @@
             </nav>
         </div>
     </header>
-    
+    <div class="carousel slide container mt-5 mb-5 w-100 h-50" data-bs-ride="carousel" id="carouselExampleCaptions">                                                           
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- Slide 1: Destaque de Maquiagem -->
+            <div class="carousel-item active">
+                <img src="https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 h-100" alt="Maquiagem profissional">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                    <h5 class="text-light">Coleção Outono/Inverno</h5>
+                    <p class="text-light">Batom, paleta de sombras e muito mais para um look irresistível!</p>
+                    <a href="#" class="btn btn-light btn-sm mt-2">Compre Agora</a>
+                </div>
+            </div>
+            
+            <!-- Slide 2: Promoção de Skincare -->
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 h-100" alt="Produtos de skincare">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                    <h5 class="text-light">Skincare que Transforma</h5>
+                    <p class="text-light">30% OFF em hidratantes e serums até o fim do mês!</p>
+                    <a href="#" class="btn btn-light btn-sm mt-2">Aproveite</a>
+                </div>
+            </div>
+            
+            <!-- Slide 3: Lançamento de Perfumaria -->
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3985322/pexels-photo-3985322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 h-100" alt="Perfumes luxuosos">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                    <h5 class="text-light">Novas Fragrâncias</h5>
+                    <p class="text-light">Descubra o aroma que combina com sua personalidade.</p>
+                    <a href="#" class="btn btn-light btn-sm mt-2">Conheça</a>
+                </div>
+            </div>        
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> 
+    </div>
+            
+</div>
     <main class="py-5">
         <div class="container">
             <h1 class="text-center display-5 fw-bold mb-3 text-dark">Nossos Produtos</h1>
             <p class="text-center text-secondary mb-5 mx-auto" style="max-width: 600px;">
-                Encontre os melhores produtos otaku com qualidade e conforto que você merece
-            </p>
+                Descubra a beleza que há em você com os cosméticos que transformam e realçam sua essência!
             
             <div class="row">
                 <!-- Cartão 1 -->
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
                     <div class="product-card card h-100">
                         <div class="overflow-hidden" style="height: 200px;">
-                            <img src="https://images.pexels.com/photos/373289/pexels-photo-373289.jpeg" class="card-img-top w-100 h-100" alt="Kit de almofadas">
+                            <img src="./images/WhatsApp Image 2025-04-14 at 19.30.26 (1).jpeg" class="card-img-top w-100 h-100" alt="Kit de almofadas">
                         </div>
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold mb-2">Kit de Almofadas</h5>
+                            <h5 class="card-title fw-bold mb-2">lá vie est belle edp 100 ml</h5>
                             <h6 class="text-primary mb-3">R$119,90</h6>
                             <p class="card-text text-muted flex-grow-1">
                                 Almofadas anti-estresse em tecido de algodão premium. Conforto e qualidade para seu dia a dia.
@@ -276,10 +385,10 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
                     <div class="product-card card h-100">
                         <div class="overflow-hidden" style="height: 200px;">
-                            <img src="https://images.pexels.com/photos/35185/hats-fedora-hat-manufacture-stack.jpg" class="card-img-top w-100 h-100" alt="Boné Pokémon">
+                            <img src="./images/WhatsApp Image 2025-04-14 at 19.30.26.jpeg" class="card-img-top w-100 h-100" alt="Boné Pokémon">
                         </div>
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold mb-2">Boné Pokémon</h5>
+                            <h5 class="card-title fw-bold mb-2">oui</h5>
                             <h6 class="text-primary mb-3">R$54,90</h6>
                             <p class="card-text text-muted flex-grow-1">
                                 Boné premium com logo do Pokémon. Estilo e conforto para os verdadeiros mestres pokémon.
@@ -293,11 +402,11 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
                     <div class="product-card card h-100">
                         <div class="overflow-hidden" style="height: 200px;">
-                            <img src="https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg" class="card-img-top w-100 h-100" alt="Blusa Naruto">
+                            <img src="./images/WhatsApp Image 2025-04-14 at 19.36.58.jpeg" class="card-img-top w-100 h-100" alt="Blusa Naruto">
                         </div>
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold mb-2">Blusa Naruto</h5>
-                            <h6 class="text-primary mb-3">R$139,90</h6>
+                            <h5 class="card-title fw-bold mb-2">perfume do Naruto/h5>
+                            <h6 class="text-primary mb-3">R$110,00</h6>
                             <p class="card-text text-muted flex-grow-1">
                                 Moletom premium com estampa do Naruto. Tecido macio e durável para os dias mais frios.
                             </p>
@@ -310,11 +419,11 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
                     <div class="product-card card h-100">
                         <div class="overflow-hidden" style="height: 200px;">
-                            <img src="https://images.pexels.com/photos/247934/pexels-photo-247934.jpeg" class="card-img-top w-100 h-100" alt="Kunai Naruto">
+                            <img src="./images/WhatsApp Image 2025-05-19 at 19.29.32.jpeg" class="card-img-top w-100 h-100" alt="Kunai Naruto">
                         </div>
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold mb-2">Kunai Naruto</h5>
-                            <h6 class="text-primary mb-3">R$39,98</h6>
+                            <h5 class="card-title fw-bold mb-2">coffee woman duo </h5>
+                            <h6 class="text-primary mb-3">R$209,90</h6>
                             <p class="card-text text-muted flex-grow-1">
                                 Kit kunai e shuriken em plástico resistente. Perfeito para cosplay e colecionadores.
                             </p>
@@ -325,6 +434,89 @@
             </div>
         </div>
     </main>
+    <footer class="text-white pt-5 pb-4" id="rodape">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna 1: Sobre a loja -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase dancing-script-regular fs-3 mb-4">Geovana Cosméticos</h5>
+                    <p class="text-muted">
+                        A mais completa linha de cosméticos e produtos de beleza para realçar sua beleza natural.
+                    </p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Coluna 2: Links úteis -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-muted">Home</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-muted">Produtos</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-muted">Sobre Nós</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contato</a></li>
+                        <li class="mb-2"><a href="login.html" class="text-muted">Minha Conta</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Coluna 3: Contato -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Contato</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i> Rua das Belezas, 123 - Centro, São Paulo/SP
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i> (11) 98765-4321
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i> contato@geovanacosmeticos.com.br
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-clock me-2"></i> Seg-Sex: 9h às 18h | Sáb: 9h às 13h
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Coluna 4: Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4">Newsletter</h5>
+                    <p class="text-muted">Assine e receba ofertas exclusivas!</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control bg-light" placeholder="Seu e-mail" aria-label="Seu e-mail">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        <img src="https://via.placeholder.com/150x50?text=Formas+de+Pagamento" alt="Formas de pagamento" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="my-4 bg-secondary">
+    
+            <div class="row align-items-center">
+                <!-- Copyright -->
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-muted">&copy; 2023 Geovana Cosméticos. Todos os direitos reservados.</p>
+                </div>
+                
+                <!-- Links legais -->
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-muted me-3">Termos de Uso</a>
+                    <a href="#" class="text-muted me-3">Política de Privacidade</a>
+                    <a href="#" class="text-muted">Trocas e Devoluções</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
